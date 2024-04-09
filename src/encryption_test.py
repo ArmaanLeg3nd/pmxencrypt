@@ -7,12 +7,13 @@ def main():
 
     payload = b'This is a test payload.'  # Example payload
     
-    encrypted_payload = encrypt_data(key, nonce, payload)
-    decrypted_payload = decrypt_data(key, nonce, encrypted_payload)
+    encrypted_payload, tag = encrypt_data(key, nonce, payload)
+    decrypted_payload = decrypt_data(key, nonce, encrypted_payload, tag)
     
     print("Original Payload:", payload)
     print("Encrypted Payload:", encrypted_payload)
     print("Decrypted Payload:", decrypted_payload.decode('utf-8'))
+
 
 if __name__ == "__main__":
     main()
