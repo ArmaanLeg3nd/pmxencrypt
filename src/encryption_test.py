@@ -2,8 +2,8 @@ from encrypt import encrypt_data, decrypt_data
 import os
 
 def main():
-    key = os.urandom(32)  # Generate a random key (ChaCha20 key size is 256 bits)
-    nonce = os.urandom(16)  # Generate a random nonce (ChaCha20 nonce size is 96 bits)
+    key = os.urandom(32)  # Generate a random key (AES key size is 256 bits)
+    nonce = os.urandom(16)  # Generate a random nonce (GCM nonce size is 96 bits)
 
     payload = b'This is a test payload.'  # Example payload
     

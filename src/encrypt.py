@@ -1,6 +1,5 @@
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 from cryptography.hazmat.backends import default_backend
-import os
 
 # Function to encrypt data using AES-GCM
 def encrypt_data(key, nonce, data, associated_data=b""):

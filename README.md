@@ -1,8 +1,8 @@
 # crypter-temp
-A crypter written in python which utilizes ChaCha20 stream cipher
+A crypter written in python which utilizes AES-GCM
 ### This tool is for educational purposes only
 
-This crypter utilizes the ChaCha20 stream cipher since it is very fast and a crypter usually encrypts the code once and it is expected the malicious code decryption should be as efficient as possible.
+This crypter utilizes the AES-GCM (Galois Counter Mode) since it takes any amount of data as input and is also fast during decryption and a crypter usually encrypts the code once and it is expected the malicious code decryption should be as efficient as possible.
 
 
 ## Getting started
