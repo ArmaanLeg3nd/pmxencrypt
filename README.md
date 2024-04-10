@@ -3,7 +3,7 @@ Python Crypter v1.0
 
 ## Authors
 
-Armaan ([@ArmaanLeg3nd](https://github.com/ArmaanLeg3nd))
+Armaan ([@ArmaanLeg3nd](https://github.com/ArmaanLeg3nd))<br>
 Adhip ([@BlBirb](https://github.com/BlBirb))
 
 ## What is this?
