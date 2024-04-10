@@ -43,7 +43,6 @@ $ python.exe runner.py
 ```
 
 4. Enter the Input filepath, Output filepath and Output filename and click the Continue button
-<br>
+
 5. Check the Output filepath for the Output file
-<br>
 6. Aaandd You're Done!
