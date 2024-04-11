@@ -1,5 +1,5 @@
 # crypter-temp
-Python Crypter v1.0
+Python Runtime Crypter v1.0
 
 ## Authors
 
@@ -20,6 +20,15 @@ Before using this tool, please note that:
 - <b>Use at your own risk:</b> While efforts have been made to ensure the tool's reliability, there may still be bugs or unintended behaviors.
 - <b>No warranties:</b> There are no warranties or guarantees provided with the use of this tool. The developers and contributors are not liable for any damages or losses incurred through its use.
 
+### In Action
+
+#### Before Processing
+
+![Before Using Crypter](./screenshots/before.png "Before using crypter")
+
+#### After Processing
+
+![After Using Crypter](./screenshots/after.png "After using crypter")
 
 ### How to Use
 
@@ -47,3 +56,7 @@ $ python.exe runner.py
 5. Check the Output filepath for the Output file
 <br>
 6. Aaandd You're Done!
+
+### Screenshots
+
+![Crypter screenshot](./screenshots/screenshot.png "Crypter screenshot")
