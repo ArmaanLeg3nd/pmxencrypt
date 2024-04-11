@@ -3,7 +3,7 @@ Python Runtime Crypter v1.0
 
 ## Authors
 
-Armaan ([@ArmaanLeg3nd](https://github.com/ArmaanLeg3nd))
+Armaan ([@ArmaanLeg3nd](https://github.com/ArmaanLeg3nd))<br>
 Adhip ([@BlBirb](https://github.com/BlBirb))
 
 ## What is this?
@@ -52,9 +52,8 @@ $ python.exe runner.py
 ```
 
 4. Enter the Input filepath, Output filepath and Output filename and click the Continue button
-<br>
+
 5. Check the Output filepath for the Output file
-<br>
 6. Aaandd You're Done!
 
 ### Screenshots
