@@ -1,4 +1,4 @@
-# crypter-temp
+# PMXencrypt
 Python Runtime Crypter v1.0
 
 ## Authors
