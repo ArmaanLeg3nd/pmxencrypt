@@ -59,3 +59,7 @@ $ python.exe runner.py
 ### Screenshots
 
 ![Crypter screenshot](./screenshots/screenshot.png "Crypter screenshot")
+
+### Thanks to
+
+- [https://github.com/the-xentropy/xencrypt](https://github.com/the-xentropy/xencrypt)
