@@ -61,10 +61,12 @@ $ python.exe cli.py
 
 ### Screenshots
 
-- GUI: 
+GUI:
+
 ![PMXencrypt gui screenshot](./screenshots/gui.png "PMXencrypt gui screenshot")
-<br>
-- CLI:
+
+CLI:
+
 ![PMXencrypt cli screenshot](./screenshots/cli.png "PMXencrypt cli screenshot")
 
 ### Thanks to
