@@ -32,11 +32,11 @@ Before using this tool, please note that:
 
 ### How to Use
 
-To get started with Crypter, follow these steps:
+To get started with PMXencrypt python crypter, follow these steps:
 
 1. Clone this repository
 ```shell
-$ git clone https://github.com/ArmaanLeg3nd/crypter-temp.git
+$ git clone https://github.com/ArmaanLeg3nd/pmxencrypt.git
 ```
 
 2. Install the required dependencies
@@ -45,20 +45,27 @@ $ git clone https://github.com/ArmaanLeg3nd/crypter-temp.git
 $ pip install -r '/_requirements.txt'
 ```
 
-3. Run the following command or click on runner.py to start the tool
-
+3. Run the following command or click on gui.py to start the tool on the gui (Windows only)
 ```shell
-$ python.exe runner.py
+$ python.exe gui.py
+```
+Run the following command to start the tool on the cli (All platforms) 
+```shell
+$ python.exe cli.py
 ```
 
-4. Enter the Input filepath, Output filepath and Output filename and click the Continue button
+4. Enter the Input filepath, Output filepath and Output filename to proceed
 
 5. Check the Output filepath for the Output file
 6. Aaandd You're Done!
 
 ### Screenshots
 
-![Crypter screenshot](./screenshots/screenshot.png "Crypter screenshot")
+- GUI: 
+![PMXencrypt gui screenshot](./screenshots/gui.png "PMXencrypt gui screenshot")
+<br>
+- CLI:
+![PMXencrypt cli screenshot](./screenshots/cli.png "PMXencrypt cli screenshot")
 
 ### Thanks to
 
