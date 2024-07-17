@@ -6,10 +6,13 @@ Python Runtime Crypter v1.0
 Armaan ([@ArmaanLeg3nd](https://github.com/ArmaanLeg3nd))<br>
 Adhip ([@BlBirb](https://github.com/BlBirb))
 
-## What is this?
-A crypter written in python for python-based malware which utilizes AES-GCM
+## What is a Crypter?
+A crypter is an application that is used to encrypt and obfuscate malware, making it nearly undetectable to antivirus and security programs.
 
-This crypter utilizes the AES-GCM (Galois Counter Mode) since it takes any amount of data as input and is also fast during decryption and a crypter usually encrypts the code once and it is expected the malicious code decryption should be as efficient as possible.
+## What is this?
+A crypter written in python for malware written in python which utilizes AES.
+
+This crypter utilizes the AES-GCM (Galois Counter Mode) since the GCM takes any amount of data as input and is also fast during decryption. Since a crypter usually encrypts the code once and it may expect multiple decryption processes for the encrypted code, a shorter decryption time is preferred over a longer one.
 
 ## This tool is for educational purposes only
 
