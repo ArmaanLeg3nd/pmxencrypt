@@ -39,28 +39,28 @@ To get started with PMXencrypt python crypter, follow these steps:
 
 1. Clone this repository
 ```shell
-$ git clone https://github.com/ArmaanLeg3nd/pmxencrypt.git
+git clone https://github.com/ArmaanLeg3nd/pmxencrypt.git
 ```
 
 2. Install the required dependencies
 
 ```shell
-$ pip install -r '/_requirements.txt'
+pip install -r '/_requirements.txt'
 ```
 
 3. Run the following command or click on gui.py to start the tool on the gui (Windows only)
 ```shell
-$ python.exe gui.py
+python.exe gui.py
 ```
 Run the following command to start the tool on the cli (All platforms) 
 ```shell
-$ python.exe cli.py
+python.exe cli.py
 ```
 
 4. Enter the Input filepath, Output filepath and Output filename to proceed
 
 5. Check the Output filepath for the Output file
-6. Aaandd You're Done!
+6. And You're Done!
 
 ### Screenshots
 
@@ -72,6 +72,6 @@ CLI:
 
 ![PMXencrypt cli screenshot](./screenshots/cli.png "PMXencrypt cli screenshot")
 
-### Thanks to
+### References
 
 - [https://github.com/the-xentropy/xencrypt](https://github.com/the-xentropy/xencrypt)
